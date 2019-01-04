@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<div id="meta">
+    <script type="text/template" id="metahome">      
+    {{ _.each(seo,function(seo){}}
+      <meta name="description" content="{{ print(seo.descripcion) }}">
+      <meta name="keywords" content="{{ print(seo.keywords) }}">
+      <meta name="author" content="{{ print(seo.autor) }}">
+    {{});}}
+    </script>
+</div>
+    
+    <title>U.E Colegio Padre Diaz</title>
+    <!--fin contenido json-->
+    
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    
+  
+
+ 
+          
+
+<!-- Custom CSS -->
+<link href="css/five.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    
+<!--favicon-->
+    <link rel="icon" type="image/jpg" href="/img/logo cpd.jpg" />
+<!--favicon-->
+    
+
+ 
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  
+
+</head>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    <span class="navbar-header page-scroll"><a class="navbar-brand page-scroll" href="#page-top">U.E Colegio "Padre Diaz"</a></span> 
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"> <a href="#page-top"></a> </li>
+        <li> <a class="page-scroll" href="index.html">Inicio</a> </li>
+        <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Instituto <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li><a href="instituto-mision-vision.html">Mision-Vision</a></li>
+               <li><a href="instituto-resena-historica.html">Reseña Historica</a></li>
+               <li><a href="instituto-resena-historica.html">Galeria</a></li>  
+              
+         
+            </ul>
+          </li>
+        <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li><a target="_blank" href="planificacion-anual.html">Planificacion  Anual</a></li>
+               <li><a target="_blank" href="">Numeros de cuentas</a></li>
+            </ul>
+        </li>
+        
+        <li> <a class="page-scroll" href="#contact">Contacta</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <!--<div class="intro-lead-in">Bienvenidos!</div>-->
+      <div class="intro-heading"><br> Instruir Educando.
+        </div>
+      <!--<a href="#services" class="page-scroll btn btn-xl"><i class="fa fa-angle-double-down fa-4x"></i></a>--> </div>
+  </div>
+</header>
+
+<!-- Services arear informativa -->
+    
+<section id="team" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Área informativa</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+      
+<!---------------------------------------------------------------contenido dinamico------------------------------------------------------------->   
+
+      <div  id="preloader" class="progress">
+          <div class="indeterminate"></div>
+      </div>    
+
+        
+        
+<div id="notas">
+    <script type="text/template" id="menota">
+      {{ _.each(coll,function(coll){}}
+        <div class="col s12 m3">
+              <div class="card deep-orange darken-2">
+                  
+                    <div class="card-content white-text">
+                          <span class="card-title">{{ print(coll.not_titulo) }}</span>
+                          <p >{{ print(coll.not_descripcion) }}</p>
+                    </div>
+
+                    <div class="card-action">
+                         <!--<a href="#">This is a link</a>-->
+                        <strong class=" white-text">publicado el: <time datetime="{{ print(coll.not_publicado) }}">{{ print(coll.not_publicado) }}</time></strong>
+                    </div>
+
+              </div>
+        </div>
+      {{});}}
+    </script>
+</div>     
+<!-----------------------------------------------------------------fin dinamico----------------------------------------------------------------->
+        
+    
+  </div>
+</section>
+
+<!-- area que contiene la informacion de los peic,pep,avec -->
+<section id="portfolio" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">No Dejes de Visitar!!!</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+        
+      <div class="row">
+          
+        <!--1-->  
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/team/avec.jpg">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-action">
+              <a target="_blank"href="http://www.avec.org.ve/">Ver mas</a>
+            </div>
+          </div>
+        </div>
+        <!--2-->
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/team/peic.jpg">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-action">
+              <a target="_blank"href="documents/peic.pdf">Ver mas</a>
+            </div>
+          </div>
+        </div>  
+        <!--3-->  
+          <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/team/pep.jpg">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+            <div class="card-action">
+              <a target="_blank"href="documents/pep.pdf">Ver mas</a>
+            </div>
+          </div>
+        </div>
+    
+     
+     
+ 
+    </div>
+        
+      
+    </div><!--fin row-->
+  </div>
+</section>
+
+<!-- About Section ojo aqui inicia -->
+<!--aqui--><section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-heading">Cuentas Bancarias U.E Colegio Padre Diaz</h3>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+      
+      
+        
+      
+        
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/bancos/logoBBVA_tcm1305-457234.png">
+              <!--<span class="card-title">Card Title</span>-->
+            </div>
+              
+               <div class="card-content white-text">
+              <p>0108-0087-19-0100002935</p>
+               
+            </div>
+              
+         
+          </div>
+        </div>
+        
+        
+        
+    </div>
+  </div>
+</section><!--ojo aqui finaliza-->
+
+
+<!-- Team Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contáctanos</h2>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="row">
+        
+      <div class="col-md-4">
+        <h5><i class="fa fa-map-marker"></i> Dirección</h5>
+          
+        <p>Av Tricentenaria entre carrera 5 y 6 Duaca,Municipio Crepo,Estado Lara</p>
+          
+<!--<div class="panel panel-default">
+  <div class="panel-body">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d981.4314411117623!2d-69.16138398288852!3d10.28366597808241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x4f94f00b6996944a!2sSan+Juan+Bautista+de+Duaca+Monumento+Nacional!5e0!3m2!1ses-419!2sve!4v1434355250238" width="270" height="200" frameborder="0" style="border:0"></iframe>
+
+  </div>
+</div>-->
+      
+          
+      </div>
+        
+        
+      <div class="col-md-4">
+        <h5><i class="fa fa-phone"></i> Telefonos</h5>
+        0253-221043      
+      </div>
+
+      <div class="col-md-4">
+        <h5><i class=""></i> RIF</h5>
+        J-30220622-7      
+     </div>
+     <!--<div class="col-md-4">
+            <h5><i class="fa fa-envelope-o"></i> Email</h5>
+            <p>info@companyname.com</p>
+         </div>-->
+     
+         
+    </div>
+    <div class="row">
+      
+        <div class="row">
+      <div class="col-lg-12">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre *" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo *" id="email" required data-validation-required-message="Por ingrese su correo.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" placeholder="Telefono *" id="phone" required data-validation-required-message="Por favor ingrese su telefono.">
+                <p class="help-block text-danger"></p>
+              </div>
+                
+                
+                <div class="form-group">
+                <textarea class="form-control" placeholder="Mensaje *" id="message" required data-validation-required-message="Por favor ingrese su mensaje."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+                
+              
+            <div class="form-group">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-xl2">Enviar Mensaje</button>
+            </div>
+            </div>
+         
+           
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> <span class="copyright">Developer</span> </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+           <li><a target="_blank" href="https://twitter.com/uecpadrediaz"><i class="fa fa-twitter"></i></a> </li>
+          <li><a target="_blank" href="https://www.facebook.com/pages/cpd-duaca/204117749613042"><i class="fa fa-facebook"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+    
+<!--carga de javascript -->    
+
+    
+    
+<!-- jQuery --> 
+    <script src="js/jquery-1.9.1.js"></script>
+
+<!--inicializar--->
+   <script type="text/javascript">
+        $(document).on("ready",function(){
+            var control="home";
+            var sts="viewon";
+            modseo(control);
+            modnotas(sts)
+        });    
+    </script>    
+    
+<!--server->
+
+    <!--underscore-->  
+        <script src="js/underscore.js"></script>
+    <!--contenido json-->
+        <script src="modelos/mod-seo.js"></script>
+        <script src="modelos/mod-notas.js"></script>
+    <!--fin contenido json--> 
+    
+<!--server->
+    
+    
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>      
+
+<script type="text/javascript">
+document.oncontextmenu = function(){return false;}
+</script>
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!-- Plugin JavaScript --> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 
+<script src="js/classie.js"></script> 
+<script src="js/cbpAnimatedHeader.js"></script> 
+
+<!-- Contact Form JavaScript --> 
+<script src="js/jqBootstrapValidation.js"></script> 
+<script src="js/contact_me.js"></script> 
+
+<!-- Custom Theme JavaScript --> 
+<script src="js/five.js"></script>
+</body>
+</html>
